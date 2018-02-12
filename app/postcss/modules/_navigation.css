@@ -1,0 +1,25 @@
+.navigation {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   background-color: $black;
+   color: $white;
+
+   @media (--tablet) {
+      width: inherit;
+      background-color: transparent;
+      color: $black;
+      margin-right: 10%;
+   }
+
+   &__item {
+      padding: 10px 20px; 
+      @include typog-mobile-body;
+      @media (--tablet) {
+         @include typog-desktop-body;
+         &:last-child {
+            padding-right: 0;
+         }
+      }
+   }
+}

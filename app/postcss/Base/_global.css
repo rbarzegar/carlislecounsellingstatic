@@ -13,3 +13,7 @@ html {
     padding: 0;
 }
 
+a:link, a:visited, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}

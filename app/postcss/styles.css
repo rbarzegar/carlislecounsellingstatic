@@ -4,3 +4,5 @@
 @import "base/typography";
 @import "base/global";
 @import "modules/testfile";
+@import "modules/header";
+@import "modules/navigation";

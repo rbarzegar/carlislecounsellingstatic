@@ -18,8 +18,8 @@ gulp.task('css', function() {
             prefix: '_',
             extensions: '.css'
         }),
-        nested,
         mixins,
+        nested,
         vars,
         cssnext,
         rucksack({

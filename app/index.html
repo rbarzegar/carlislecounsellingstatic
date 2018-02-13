@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="main">
     <!-- Testfile -->
     <div class="tester">
         <span class="tester__mobile">Mobile</span>
@@ -20,35 +20,28 @@
     </div>
     <!-- /Testfile -->
 
-    <!-- Header section -->
+    <!-- HEADER SECTION -->
+
+    <!-- Hamburger menu icon -->
+    <div id="hamburger" class="hamburger__toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <header class="header">
         <!-- Main navigation -->
         <h1 class="header__title">
             <span class="header__colored">C</span>arlisle
             <span class="header__colored">S</span>chool
-            <span class="header__colored">C</span>ounselling</h1>
-        <nav class="main-navigation">
+            <span class="header__colored">C</span>ounselling
+        </h1>
+        <nav class="main-navigation" id="slideDownMenu">
             <a href="#" class="main-navigation__item">Our Work</a>
             <a href="#" class="main-navigation__item">Our Team</a>
             <a href="#" class="main-navigation__item">Our Role</a>
         </nav>
-        <!-- Off-Canvas menu -->
-        <nav class="off-canvas" id="offCanvasMenu">
-            <h1 class="off-canvas__title">
-                <span class="header__colored">C</span>arlisle
-                <span class="header__colored">S</span>chool
-                <span class="header__colored">C</span>ounselling
-            </h1>
-            <a href="#" class="off-canvas__item">Our Work</a>
-            <a href="#" class="off-canvas__item">Our Team</a>
-            <a href="#" class="off-canvas__item">Our Role</a>
-        </nav>
-        <!-- Hamburger menu icon -->
-        <div id="hamburger" class="off-canvas__toggler">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
     </header>
 
     <!-- Large hero section -->

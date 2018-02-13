@@ -1,10 +1,10 @@
 class OffCanvas {
    toggle() {
       const hamburger = document.getElementById('hamburger');
-      const offCanvasMenu = document.getElementById('offCanvasMenu');
+      const offCanvasMenu = document.getElementById('slideDownMenu');
       hamburger.addEventListener('click', () => {
          hamburger.classList.toggle('open');
-         offCanvasMenu.classList.toggle('slideIn');
+         slideDownMenu.classList.toggle('slideDown');
       });
    }
 }

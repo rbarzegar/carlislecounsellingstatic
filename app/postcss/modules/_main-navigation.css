@@ -7,7 +7,10 @@
 
    /* Don't display the main menu in tablet view */
    @media (--tablet-only) {
-      display: none;
+      flex-direction: column;
+      text-align: center;
+      height: 0;
+      overflow: hidden;
    }
 
    @media (--desktop) {
@@ -21,6 +24,7 @@
    &__item {
       padding: 10px 20px;
       transition: color 0.3s;
+      display: block;
       &:hover, &:focus {
          color: $mainGreen;
       } 
@@ -31,5 +35,15 @@
             padding-right: 0;
          }
       }
+
+      /* Styling the tablet version */
+      @media (--tablet-only) {
+         padding: 20px 0;
+      }
    }
+}
+
+/* Slide down toggler class for tablet views */
+.slideDown {
+   height: 100%;
 }

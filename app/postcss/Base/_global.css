@@ -17,3 +17,7 @@ a:link, a:visited, a:hover, a:visited {
     text-decoration: none;
     color: inherit;
 }
+
+.main {
+    position: relative;
+}

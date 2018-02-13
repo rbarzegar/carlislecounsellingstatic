@@ -104,10 +104,10 @@ var OffCanvas = function () {
       key: 'toggle',
       value: function toggle() {
          var hamburger = document.getElementById('hamburger');
-         var offCanvasMenu = document.getElementById('offCanvasMenu');
+         var offCanvasMenu = document.getElementById('slideDownMenu');
          hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('open');
-            offCanvasMenu.classList.toggle('slideIn');
+            slideDownMenu.classList.toggle('slideDown');
          });
       }
    }]);

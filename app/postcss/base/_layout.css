@@ -1,0 +1,45 @@
+/***** SECTION TOP AND BOTTOM DIVIDERS *****/
+
+$mobile-section-top-padding: 40px;
+$mobile-section-bottom-padding: 40px;
+$tablet-section-top-padding: 54px;
+$tablet-section-bottom-padding: 54px;
+$desktop-section-top-padding: 54px;
+$desktop-section-bottom-padding: 54px;
+
+.section-top {
+   padding-top: $mobile-section-top-padding;
+   @media (--tablet) {
+      padding-top: $tablet-section-top-padding;
+   }
+   @media (--desktop) {
+      padding-top: $desktop-section-top-padding;
+   }
+}
+
+.section-bottom {
+   padding-bottom: $mobile-section-bottom-padding;
+   @media (--tablet) {
+      padding-top: $tablet-section-bottom-padding;
+   }
+   @media (--desktop) {
+      padding-top: $desktop-section-bottom-padding;
+   }
+}
+
+/***** WRAPPERS *****/
+
+$mobile-wrapper-width: 86%;
+$tablet-wrapper-width: 86%;
+$desktop-wrapper-width: 74%;
+
+.wrapper {
+   margin: 0 auto;
+   width: $mobile-wrapper-width;
+   @media (--tablet) {
+      width: $tablet-wrapper-width;
+   }
+   @media (--desktop) {
+      width: $desktop-wrapper-width;
+   }
+}

@@ -541,6 +541,65 @@ a:link, a:visited, a:hover, a:visited {
     position: relative;
 }
 
+/***** SECTION TOP AND BOTTOM DIVIDERS *****/
+
+.section-top {
+   padding-top: 40px;
+}
+
+@media (min-width: 641px) {
+
+.section-top {
+      padding-top: 54px
+}
+   }
+
+@media (min-width: 1025px) {
+
+.section-top {
+      padding-top: 54px
+}
+   }
+
+.section-bottom {
+   padding-bottom: 40px;
+}
+
+@media (min-width: 641px) {
+
+.section-bottom {
+      padding-top: 54px
+}
+   }
+
+@media (min-width: 1025px) {
+
+.section-bottom {
+      padding-top: 54px
+}
+   }
+
+/***** WRAPPERS *****/
+
+.wrapper {
+   margin: 0 auto;
+   width: 86%;
+}
+
+@media (min-width: 641px) {
+
+.wrapper {
+      width: 86%
+}
+   }
+
+@media (min-width: 1025px) {
+
+.wrapper {
+      width: 74%
+}
+   }
+
 .tester {
    position: fixed;
    top: 0;
@@ -674,7 +733,8 @@ a:link, a:visited, a:hover, a:visited {
 /* Styling the main menu items */
 
 .main-navigation__item {
-      padding: 0.625rem 1.25rem;
+      padding: 0.938rem 1.25rem;
+      letter-spacing: 0.063rem;
       -webkit-transition: color 0.3s;
       transition: color 0.3s;
       display: block;
@@ -786,3 +846,111 @@ a:link, a:visited, a:hover, a:visited {
          margin-right: 5%
    }
       }
+
+.large-hero {
+   /* Overall top and bottom padding */
+   padding-top: 40px;
+   padding-bottom: 56px;
+
+   /* Background imaging 139,255,106,30 */
+   background-image: url('../images/hero--mobile.PNG');
+   background-repeat: no-repeat;
+   background-position: 0 35%;
+   background-size: cover;
+}
+
+@media (min-width: 641px) {
+
+.large-hero {
+      padding-top: 185px;
+      padding-bottom: 216px
+}
+   }
+
+@media (min-width: 1025px) {
+
+.large-hero {
+      padding-top: 185px;
+      padding-bottom: 235px
+}
+   }
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+.large-hero {
+      background-image: url('../images/hero--tablet.PNG')
+}
+   }
+
+@media (min-width: 1025px) {
+
+.large-hero {
+      background-image: url('../images/hero--desktop.PNG')
+}
+   }
+
+/* Styling the main banner */
+
+.large-hero__banner {
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      padding-bottom: 8px;
+   }
+
+@media (min-width: 641px) {
+
+.large-hero__banner {
+         padding-bottom: 12px
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.large-hero__banner {
+         padding-bottom: 26px
+   }
+      }
+
+/* Styling the call to action */
+
+.large-hero__cta {
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      padding-bottom: 14px;
+   }
+
+@media (min-width: 641px) {
+
+.large-hero__cta {
+         padding-bottom: 32px
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.large-hero__cta {
+         padding-bottom: 40px
+   }
+      }
+
+/* Styling the button */
+
+.large-hero__btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      background-color: transparent;
+      padding: 0.5rem 2.25rem;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+   }

@@ -1,0 +1,68 @@
+.large-hero {
+   /* Overall top and bottom padding */
+   padding-top: 40px;
+   padding-bottom: 56px;
+   @media (--tablet) {
+      padding-top: 185px;
+      padding-bottom: 216px;
+   }
+   @media (--desktop) {
+      padding-top: 185px;
+      padding-bottom: 235px;
+   }
+
+   /* Background imaging 139,255,106,30 */
+   background-image: url('../images/hero--mobile.PNG');
+   @media (--tablet-only) {
+      background-image: url('../images/hero--tablet.PNG');
+   }
+   @media (--desktop) {
+      background-image: url('../images/hero--desktop.PNG');
+   }
+   background-repeat: no-repeat;
+   background-position: 0 35%;
+   background-size: cover;
+
+   /* Styling the main banner */
+   &__banner {
+      text-align: center;
+      color: $white;
+      font-weight: normal;
+      padding-bottom: 8px;
+      @media (--tablet) {
+         padding-bottom: 12px;
+      }
+      @media (--desktop) {
+         padding-bottom: 26px;
+      }
+   }
+
+   /* Styling the call to action */
+   &__cta {
+      text-align: center;
+      color: $white;
+      font-weight: normal;
+      padding-bottom: 14px;
+      @media (--tablet) {
+         padding-bottom: 32px;
+      }
+      @media (--desktop) {
+         padding-bottom: 40px;
+      }
+   }
+
+   /* Styling the button */
+   &__btn {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      background-color: transparent;
+      padding: 8px 36px;
+      border: 2px solid $white;
+      border-radius: 5px;
+      color: $white;
+      font-weight: bold;
+      cursor: pointer;
+   }
+}

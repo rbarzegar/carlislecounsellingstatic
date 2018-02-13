@@ -1,0 +1,19 @@
+.benefits {
+   text-align: center;
+
+   &__title {
+      padding-bottom: 20px;
+      @media (--tablet) {
+         padding-bottom: 26px;
+      }
+      @media (--desktop) {
+         padding-bottom: 28px;
+      }
+   }
+   
+   &__body {
+      @media (--tablet) {
+         text-align: left;
+      }
+   }
+}

@@ -672,6 +672,15 @@ a:link, a:visited, a:hover, a:visited {
 
 /* Added a flex-grow to the h1 title to make sure it doesn't wrap */
 
+/* Tweaked the font size down slightly on mobile to prevent text wrapping on mobile */
+
+@media (max-width: 640px) {
+
+.header__title {
+         font-size: 1.95rem
+   }
+      }
+
 @media (min-width: 1025px) {
 
 .header__title {
@@ -954,3 +963,32 @@ a:link, a:visited, a:hover, a:visited {
       font-weight: bold;
       cursor: pointer;
    }
+
+.benefits {
+   text-align: center;
+}
+
+.benefits__title {
+      padding-bottom: 20px;
+   }
+
+@media (min-width: 641px) {
+
+.benefits__title {
+         padding-bottom: 26px
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.benefits__title {
+         padding-bottom: 28px
+   }
+      }
+
+@media (min-width: 641px) {
+
+.benefits__body {
+         text-align: left
+   }
+      }

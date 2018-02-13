@@ -1,19 +1,29 @@
-.navigation {
+.main-navigation {
    display: flex;
    justify-content: space-around;
    width: 100%;
    background-color: $black;
    color: $white;
 
-   @media (--tablet) {
+   /* Don't display the main menu in tablet view */
+   @media (--tablet-only) {
+      display: none;
+   }
+
+   @media (--desktop) {
       width: inherit;
       background-color: transparent;
       color: $black;
       margin-right: 10%;
    }
 
+   /* Styling the main menu items */
    &__item {
-      padding: 10px 20px; 
+      padding: 10px 20px;
+      transition: color 0.3s;
+      &:hover, &:focus {
+         color: $mainGreen;
+      } 
       @include typog-mobile-body;
       @media (--tablet) {
          @include typog-desktop-body;

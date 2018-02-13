@@ -12,17 +12,43 @@
 </head>
 
 <body>
+    <!-- Testfile -->
+    <div class="tester">
+        <span class="tester__mobile">Mobile</span>
+        <span class="tester__tablet">Tablet</span>
+        <span class="tester__desktop">Desktop</span>
+    </div>
+    <!-- /Testfile -->
+
     <!-- Header section -->
     <header class="header">
+        <!-- Main navigation -->
         <h1 class="header__title">
             <span class="header__colored">C</span>arlisle
             <span class="header__colored">S</span>chool
             <span class="header__colored">C</span>ounselling</h1>
-        <nav class="navigation">
-            <a href="#" class="navigation__item">Our Work</a>
-            <a href="#" class="navigation__item">Our Team</a>
-            <a href="#" class="navigation__item">Our Role</a>
+        <nav class="main-navigation">
+            <a href="#" class="main-navigation__item">Our Work</a>
+            <a href="#" class="main-navigation__item">Our Team</a>
+            <a href="#" class="main-navigation__item">Our Role</a>
         </nav>
+        <!-- Off-Canvas menu -->
+        <nav class="off-canvas" id="offCanvasMenu">
+            <h1 class="off-canvas__title">
+                <span class="header__colored">C</span>arlisle
+                <span class="header__colored">S</span>chool
+                <span class="header__colored">C</span>ounselling
+            </h1>
+            <a href="#" class="off-canvas__item">Our Work</a>
+            <a href="#" class="off-canvas__item">Our Team</a>
+            <a href="#" class="off-canvas__item">Our Role</a>
+        </nav>
+        <!-- Hamburger menu icon -->
+        <div id="hamburger" class="off-canvas__toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <!-- Large hero section -->

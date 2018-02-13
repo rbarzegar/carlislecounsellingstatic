@@ -1,5 +1,25 @@
-body {
-   @media (--mobile) {
-      background-color: transparent;
-   } 
+.tester {
+   position: fixed;
+   top: 0;
+   right: 0;
+   font-weight: bold;
+   color: red;
+   font-size: 0.75rem;
+   &__mobile {
+      @media (--tablet) {
+         display: none;
+      }
+   }
+   &__tablet {
+      display: none;
+      @media (--tablet-only) {
+         display: inline;
+      }
+   }
+   &__desktop {
+      display: none;
+      @media (--desktop) {
+         display: inline;
+      }
+   }
 }

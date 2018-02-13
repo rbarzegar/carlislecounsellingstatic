@@ -1,3 +1,12 @@
-@custom-media --mobile (max-width: 500px);
-@custom-media --tablet (min-width: 501px);
-@custom-media --desktop (min-width: 1000px);
+/***** Breakpoints *****/
+
+$mobile-max: 640px;
+$tablet: 641px;
+$desktop: 1025px;
+
+@custom-media --mobile (max-width: $mobile-max);
+@custom-media --tablet (min-width: $tablet);
+@custom-media --desktop (min-width: $desktop);
+@custom-media --tablet-only (width >= $tablet) and (width < $desktop);
+
+

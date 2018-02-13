@@ -6,7 +6,6 @@ class OffCanvas {
          hamburger.classList.toggle('open');
          offCanvasMenu.classList.toggle('slideIn');
       });
-
    }
 }
 

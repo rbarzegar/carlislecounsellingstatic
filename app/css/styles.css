@@ -606,12 +606,16 @@ a:link, a:visited, a:hover, a:visited {
       color: #6aa36e;
    }
 
+.header__title {
+      z-index: 1000;
+   }
+
 @media (min-width: 641px) {
 
 .header__title {
          margin-left: 5%;
          margin-top: 36px;
-         margin-bottom: 36px
+         margin-bottom: 36px;
    }
       }
 

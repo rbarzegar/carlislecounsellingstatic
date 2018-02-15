@@ -1,0 +1,21 @@
+/***** Styling of the images in the our team section *****/
+
+.our-team {
+   &__mobile-image, &__bacp {
+      @include img-fluid;
+      @media (--tablet) {
+         display: none;
+      }
+   }
+
+   &__desktop-image, &__bacp--large {
+      @include img-fluid;
+      @media (--mobile) {
+         display: none;
+      }
+   }
+   
+   &__accreditation {
+      text-align: center;
+   }
+}

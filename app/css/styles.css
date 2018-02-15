@@ -543,41 +543,68 @@ a:link, a:visited, a:hover, a:visited {
 
 /***** SECTION TOP AND BOTTOM DIVIDERS *****/
 
-.section-top {
+.section-padding {
    padding-top: 40px;
-}
-
-@media (min-width: 641px) {
-
-.section-top {
-      padding-top: 54px
-}
-   }
-
-@media (min-width: 1025px) {
-
-.section-top {
-      padding-top: 54px
-}
-   }
-
-.section-bottom {
    padding-bottom: 40px;
 }
 
 @media (min-width: 641px) {
 
-.section-bottom {
-      padding-top: 54px
+.section-padding {
+      padding-top: 54px;
+      padding-bottom: 54px
 }
    }
 
 @media (min-width: 1025px) {
 
-.section-bottom {
-      padding-top: 54px
+.section-padding {
+      padding-top: 54px;
+      padding-bottom: 54px
 }
    }
+
+.section-padding--large {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+@media (min-width: 641px) {
+
+.section-padding--large {
+         padding-top: 72px;
+         padding-bottom: 72px
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.section-padding--large {
+         padding-top: 72px;
+         padding-bottom: 72px
+   }
+      }
+
+.section-padding--small {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+@media (min-width: 641px) {
+
+.section-padding--small {
+         padding-top: 35px;
+         padding-bottom: 35px
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.section-padding--small {
+         padding-top: 35px;
+         padding-bottom: 35px
+   }
+      }
 
 /***** WRAPPERS *****/
 
@@ -599,6 +626,10 @@ a:link, a:visited, a:hover, a:visited {
       width: 74%
 }
    }
+
+/***** Section title mixin *****/
+
+/***** Responsive imaging *****/
 
 .tester {
    position: fixed;
@@ -962,29 +993,37 @@ a:link, a:visited, a:hover, a:visited {
       color: #fff;
       font-weight: bold;
       cursor: pointer;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
    }
+
+.large-hero__btn:hover {
+         background-color: #6aa36e;
+      }
 
 .benefits {
    text-align: center;
+   letter-spacing: 0.022rem;
 }
 
 .benefits__title {
-      padding-bottom: 20px;
+   font-weight: 400;
+   padding-bottom: 20px;
    }
 
 @media (min-width: 641px) {
 
 .benefits__title {
-         padding-bottom: 26px
+      padding-bottom: 26px;
    }
-      }
+   }
 
 @media (min-width: 1025px) {
 
 .benefits__title {
-         padding-bottom: 28px
+      padding-bottom: 28px;
    }
-      }
+   }
 
 @media (min-width: 641px) {
 
@@ -1040,6 +1079,8 @@ a:link, a:visited, a:hover, a:visited {
    }
 
 .about__list {
+      /* Indent the bullets */
+      /* padding-left: 1.35rem; */
    font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
    font-size: body-mobile-size;
    line-height: 1.05;
@@ -1056,5 +1097,259 @@ a:link, a:visited, a:hover, a:visited {
 
 .about--color-white {
       color: #fff;
-      font-weight: normal;
+      font-weight: 300;
+   }
+
+.mid-section {
+   background-color: #000;
+   color: #fff;
+   font-weight: 300;
+   letter-spacing: 0.022rem;
+}
+
+.mid-section__body {
+      text-align: center;
+   }
+
+@media (min-width: 641px) {
+
+.mid-section__body {
+         text-align: left
+   }
+      }
+
+.our-role {
+   background-color: #6aa36e;
+   color: #fff;
+   font-weight: 300;
+   text-align: center;
+   letter-spacing: 0.022rem;
+
+
+
+}
+
+/* Style the title */
+
+.our-role__title {
+      color: #000;
+   font-weight: 400;
+   padding-bottom: 20px;
+   }
+
+@media (min-width: 641px) {
+
+.our-role__title {
+      padding-bottom: 26px;
+   }
+   }
+
+@media (min-width: 1025px) {
+
+.our-role__title {
+      padding-bottom: 28px;
+   }
+   }
+
+/* Style the body */
+
+@media (min-width: 641px) {
+
+.our-role__body {
+         text-align: left
+   }
+      }
+
+.our-team__title {
+   font-weight: 400;
+   padding-bottom: 20px;
+      text-align: center;
+   }
+
+@media (min-width: 641px) {
+
+.our-team__title {
+      padding-bottom: 26px;
+   }
+   }
+
+@media (min-width: 1025px) {
+
+.our-team__title {
+      padding-bottom: 28px;
+   }
+   }
+
+.our-team__body {
+      padding-bottom: 24px;
+      padding-bottom: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.022rem;
+   }
+
+@media (min-width: 641px) {
+
+.our-team__body {
+         padding-bottom: 3rem;
+         text-align: left;
+   }
+      }
+
+.our-team__team-member {
+      display: block;
+      padding-bottom: 20px;
+      text-align: center;
+   }
+
+@media (min-width: 641px) {
+
+.our-team__team-member {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         padding-bottom: 30px;
+         text-align: left
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.our-team__team-member {
+         padding-bottom: 48px
+   }
+      }
+
+.our-team__image {
+   max-width: 100%;
+   height: auto;
+   }
+
+@media (min-width: 641px) {
+
+.our-team__image {
+         width: 25%
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.our-team__image {
+         width: 15%
+   }
+      }
+
+@media (min-width: 641px) {
+
+.our-team__team-member-about {
+         width: 75%
+   }
+      }
+
+@media (min-width: 1025px) {
+
+.our-team__team-member-about {
+         width: 85%
+   }
+      }
+
+/* Setting the typography */
+
+.our-team__name,
+   .our-team__bio {
+   font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
+   font-size: calc(1rem + 6 * ((100vw - 40rem) / 385));
+   }
+
+@media screen and (min-width: 1025px) {
+
+  .our-team__name,
+   .our-team__bio {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .our-team__name,
+   .our-team__bio {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 641px) {
+
+.our-team__name,
+   .our-team__bio {
+         padding-left: 1rem
+   }
+      }
+
+.our-team__bio {
+      color: #9b9b9b;
+   }
+
+/***** Styling of the images in the our team section *****/
+
+.our-team__mobile-image, .our-team__bacp {
+   max-width: 100%;
+   height: auto;
+   }
+
+@media (min-width: 641px) {
+
+.our-team__mobile-image, .our-team__bacp {
+         display: none
+   }
+      }
+
+.our-team__desktop-image, .our-team__bacp--large {
+   max-width: 100%;
+   height: auto;
+   }
+
+@media (max-width: 640px) {
+
+.our-team__desktop-image, .our-team__bacp--large {
+         display: none
+   }
+      }
+
+.our-team__accreditation {
+      text-align: center;
+   }
+
+.footer {
+   background-color: #000;
+   color: #fff;
+   font-weight: 300;
+}
+
+.footer__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+   }
+
+@media (min-width: 641px) {
+
+.footer__container {
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: row;
+                 flex-direction: row;
+         -ms-flex-pack: distribute;
+             justify-content: space-around
+   }
+      }
+
+.footer__miro, .footer__copy {
+      font-size: 12px;
+      font-size: 0.75rem;
    }

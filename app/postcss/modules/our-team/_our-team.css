@@ -1,0 +1,62 @@
+.our-team {
+   &__title {
+      @include section-title;
+      text-align: center;
+   }
+
+   &__body {
+      padding-bottom: 1.5rem;
+      text-align: center;
+      @media (--tablet) {
+         padding-bottom: 3rem;
+         text-align: left;
+      }
+      letter-spacing: $body-letter-spacing;
+   }
+
+   &__team-member {
+      display: block;
+      padding-bottom: 20px;
+      text-align: center;
+      @media (--tablet) {
+         display: flex;
+         padding-bottom: 30px;
+         text-align: left;
+      }
+      @media (--desktop) {
+         padding-bottom: 48px;
+      }
+   }
+
+   &__image {
+      @include img-fluid;
+      @media (--tablet) {
+         width: 25%;
+      }
+      @media (--desktop) {
+         width: 15%;
+      }
+   }
+
+   &__team-member-about {
+      @media (--tablet) {
+         width: 75%;
+      }
+      @media (--desktop) {
+         width: 85%;
+      }
+   }
+
+   /* Setting the typography */
+   &__name,
+   &__bio {
+      @include responsive-body;
+      @media (--tablet) {
+         padding-left: 1rem;
+      }
+   }
+
+   &__bio {
+      color: $gray;
+   }
+}

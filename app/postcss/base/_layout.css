@@ -1,29 +1,54 @@
 /***** SECTION TOP AND BOTTOM DIVIDERS *****/
 
-$mobile-section-top-padding: 40px;
-$mobile-section-bottom-padding: 40px;
-$tablet-section-top-padding: 54px;
-$tablet-section-bottom-padding: 54px;
-$desktop-section-top-padding: 54px;
-$desktop-section-bottom-padding: 54px;
+$mobile-section-padding-small: 30px;
+$mobile-section-padding: 40px;
+$mobile-section-padding-large: 50px;
 
-.section-top {
-   padding-top: $mobile-section-top-padding;
+$tablet-section-padding-small: 35px;
+$tablet-section-padding: 54px;
+$tablet-section-padding-large: 72px;
+
+$desktop-section-padding-small: 35px;
+$desktop-section-padding: 54px;
+$desktop-section-padding-large: 72px;
+
+.section-padding {
+   padding-top: $mobile-section-padding;
+   padding-bottom: $mobile-section-padding;
    @media (--tablet) {
-      padding-top: $tablet-section-top-padding;
+      padding-top: $tablet-section-padding;
+      padding-bottom: $tablet-section-padding;
    }
    @media (--desktop) {
-      padding-top: $desktop-section-top-padding;
+      padding-top: $desktop-section-padding;
+      padding-bottom: $desktop-section-padding;
    }
-}
 
-.section-bottom {
-   padding-bottom: $mobile-section-bottom-padding;
-   @media (--tablet) {
-      padding-top: $tablet-section-bottom-padding;
+   &--large {
+      padding-top: $mobile-section-padding-large;
+      padding-bottom: $mobile-section-padding-large;
+      @media (--tablet) {
+         padding-top: $tablet-section-padding-large;
+         padding-bottom: $tablet-section-padding-large;
+      }
+
+      @media (--desktop) {
+         padding-top: $desktop-section-padding-large;
+         padding-bottom: $desktop-section-padding-large;
+      }
    }
-   @media (--desktop) {
-      padding-top: $desktop-section-bottom-padding;
+
+   &--small {
+      padding-top: $mobile-section-padding-small;
+      padding-bottom: $mobile-section-padding-small;
+      @media (--tablet) {
+         padding-top: $tablet-section-padding-small;
+         padding-bottom: $tablet-section-padding-small;
+      }
+      @media (--desktop) {
+         padding-top: $desktop-section-padding-small;
+         padding-bottom: $desktop-section-padding-small;
+      }
    }
 }
 
@@ -42,4 +67,25 @@ $desktop-wrapper-width: 74%;
    @media (--desktop) {
       width: $desktop-wrapper-width;
    }
+}
+
+/***** Section title mixin *****/
+
+@mixin section-title {
+   font-weight: 400;
+   padding-bottom: 20px;
+   @media (--tablet) {
+      padding-bottom: 26px;
+   }
+   @media (--desktop) {
+      padding-bottom: 28px;
+   }
+}
+
+
+/***** Responsive imaging *****/
+
+@mixin img-fluid {
+   max-width: 100%;
+   height: auto;
 }

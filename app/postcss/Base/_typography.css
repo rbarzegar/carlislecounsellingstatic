@@ -6,6 +6,8 @@ $header-mobile-size: 24px;
 $body-desktop-size: 22px;
 $body-mobile-size: 16px;
 
+$body-letter-spacing: 0.35px;
+
 /***** TYPOGRAPHY MIXINS *****/
 
 @mixin typog-desktop-headers {

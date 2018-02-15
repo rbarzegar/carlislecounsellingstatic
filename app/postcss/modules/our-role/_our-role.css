@@ -1,13 +1,23 @@
-.benefits {
+.our-role {
+   background-color: $mainGreen;
+   color: $white;
+   font-weight: 300;
    text-align: center;
    letter-spacing: $body-letter-spacing;
+
+   /* Style the title */
    &__title {
+      color: $black;
       @include section-title;
    }
-   
+
+   /* Style the body */
    &__body {
       @media (--tablet) {
          text-align: left;
       }
    }
+
+
+
 }

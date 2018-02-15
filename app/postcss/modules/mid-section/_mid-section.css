@@ -1,11 +1,10 @@
-.benefits {
-   text-align: center;
+.mid-section {
+   background-color: $black;
+   color: $white;
+   font-weight: 300;
    letter-spacing: $body-letter-spacing;
-   &__title {
-      @include section-title;
-   }
-   
    &__body {
+      text-align: center;
       @media (--tablet) {
          text-align: left;
       }

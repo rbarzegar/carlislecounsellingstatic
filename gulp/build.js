@@ -38,7 +38,7 @@ gulp.task('minifyCSS', ['clean', 'css'], function() {
 
 gulp.task('minifyJS', ['clean'], function() {
     return gulp.src('./app/js/**/*.js')
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('./dist/js'))
 });
 

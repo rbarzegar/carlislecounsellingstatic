@@ -14,7 +14,7 @@
       }
    }
 
-   &__miro, &__copy {
+   &__miro, &__copy, &__backtotop {
       font-size: 0.75rem;
    }
 }

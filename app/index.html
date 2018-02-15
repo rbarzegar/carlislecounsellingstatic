@@ -29,7 +29,7 @@
         <span></span>
     </div>
 
-    <header class="header">
+    <header class="header" id="top">
         <!-- Main navigation -->
         <h1 class="header__title">
             <span class="header__colored">C</span>arlisle
@@ -37,9 +37,9 @@
             <span class="header__colored">C</span>ounselling
         </h1>
         <nav class="main-navigation" id="slideDownMenu">
-            <a href="#" class="main-navigation__item">Our Work</a>
-            <a href="#" class="main-navigation__item">Our Team</a>
-            <a href="#" class="main-navigation__item">Our Role</a>
+            <a href="#ourWork" class="main-navigation__item">Our Work</a>
+            <a href="#ourTeam" class="main-navigation__item">Our Team</a>
+            <a href="#ourRole" class="main-navigation__item">Our Role</a>
         </nav>
 
     </header>
@@ -53,7 +53,7 @@
             <p class="large-hero__cta">For more information on how your school can access our counselling support, please contact us:
                 <a href="mailto:info@carlisleschoolcounselling.co.uk">info@carlisleschoolcounselling.co.uk</a>
             </p>
-            <button class="large-hero__btn">Find out more</button>
+            <a href="#ourWork"><button class="large-hero__btn">Find out more</button></a>
         </div>
     </div>
 
@@ -72,7 +72,7 @@
     </div>
 
     <!-- About us -->
-    <div class="about section-padding">
+    <div class="about section-padding"  id="ourWork">
         <div class="wrapper">
             <div class="about__flex-container">
                 <div class="about__why about__column">
@@ -126,7 +126,7 @@
     </div>
 
     <!-- Our team -->
-    <div class="our-team section-padding">
+    <div class="our-team section-padding" id="ourTeam">
         <div class="wrapper">
             <h2 class="our-team__title">Our Team</h2>
             <p class="our-team__body">Evidence indicates that counselling in schools can underpin academic achievement, improve behaviour and concentration
@@ -205,7 +205,7 @@
     </div>
 
     <!-- Our role as counsellors -->
-    <div class="our-role section-padding">
+    <div class="our-role section-padding" id="ourRole">
         <div class="wrapper">
             <h2 class="our-role__title">Our role as Counsellors</h2>
             <p class="our-role__body">
@@ -232,6 +232,8 @@
                     <a href="http://www.mirodesign.co.uk">MiRo</a>
                 </p>
                 <p class="footer__copy">&copy; carlisleschoolcounselling.co.uk</p>
+                <p class="footer__backtotop"><a href="#top">Back to the top</a>
+                </p>
             </div>
         </div>
     </footer>

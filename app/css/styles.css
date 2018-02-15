@@ -992,3 +992,69 @@ a:link, a:visited, a:hover, a:visited {
          text-align: left
    }
       }
+
+.about {
+   background-color: #6aa36e;
+}
+
+.about__flex-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+@media (min-width: 641px) {
+
+.about__flex-container {
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: row;
+                 flex-direction: row
+   }
+      }
+
+@media (min-width: 641px) {
+
+.about__column {
+         width: 50%
+   }
+         .about__column:first-child {
+            padding-right: 30px;
+         }
+         .about__column:last-child {
+            padding-left: 30px;
+         }
+      }
+
+.about__column-title {
+      font-weight: normal;
+      padding-bottom: 26px;
+   }
+
+.about__column-spacing {
+      padding-bottom: 26px;
+   }
+
+.about__list {
+   font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
+   font-size: body-mobile-size;
+   line-height: 1.05;
+   }
+
+@media (min-width: 641px) {
+
+.about__list {
+   font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;
+   font-size: 1.375rem;
+   line-height: 1.3
+   }
+      }
+
+.about--color-white {
+      color: #fff;
+      font-weight: normal;
+   }

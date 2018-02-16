@@ -17,6 +17,9 @@
 
    /* Added a flex-grow to the h1 title to make sure it doesn't wrap */
    &__title {
+      margin: 0;
+      padding-top: 21px;
+      padding-bottom: 21px;
       /* Tweaked the font size down slightly on mobile to prevent text wrapping on mobile */
       @media (--mobile) {
          font-size: 1.95rem;

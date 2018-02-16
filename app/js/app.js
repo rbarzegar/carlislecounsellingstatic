@@ -78,10 +78,14 @@ var _OffCanvas = __webpack_require__(3);
 
 var _OffCanvas2 = _interopRequireDefault(_OffCanvas);
 
+var _FixedNav = __webpack_require__(4);
+
+var _FixedNav2 = _interopRequireDefault(_FixedNav);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// The main file is the top file which will bundle everything else and push to app.js
-var offCanvas = new _OffCanvas2.default();
+var offCanvas = new _OffCanvas2.default(); // The main file is the top file which will bundle everything else and push to app.js
+
 offCanvas.toggle();
 
 var scroll = new _smoothScroll2.default('a[href*="#"]', {
@@ -90,6 +94,9 @@ var scroll = new _smoothScroll2.default('a[href*="#"]', {
    offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
    easing: "easeOut" // Easing pattern to use
 });
+
+var fixedNav = new _FixedNav2.default();
+fixedNav.fixedNav();
 
 /***/ }),
 /* 1 */
@@ -163,6 +170,52 @@ var OffCanvas = function () {
 }();
 
 exports.default = OffCanvas; // This sets out what gets exported from this file - es6 notation
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+   value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var FixedNav = function () {
+   function FixedNav() {
+      _classCallCheck(this, FixedNav);
+   }
+
+   _createClass(FixedNav, [{
+      key: 'fixedNav',
+      value: function fixedNav() {
+         var nav = document.querySelector('.main-navigation');
+         var topOfNav = nav.offsetTop;
+
+         function fixtheNav() {
+            console.log(window.scrollY, topOfNav);
+            if (window.scrollY >= topOfNav) {
+               document.body.style.paddingTop = nav.offsetHeight + 'px';
+               document.body.classList.add('fixed-nav');
+            } else {
+               document.body.style.paddingTop = 0;
+               document.body.classList.remove('fixed-nav');
+            }
+         }
+
+         window.addEventListener('scroll', fixtheNav);
+      }
+   }]);
+
+   return FixedNav;
+}();
+
+exports.default = FixedNav;
 
 /***/ })
 /******/ ]);

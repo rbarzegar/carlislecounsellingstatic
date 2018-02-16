@@ -51,7 +51,7 @@
       @media (--tablet-only) {
          display: block;
          position: absolute;
-         top: -5px;
+         top: 18px;
          margin-right: 5%;
       }
    }

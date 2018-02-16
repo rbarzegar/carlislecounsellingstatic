@@ -26,9 +26,10 @@
       letter-spacing: 1px;
       transition: color 0.3s;
       display: block;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
          color: $mainGreen;
-      } 
+      }
       @include typog-mobile-body;
       @media (--tablet) {
          @include typog-desktop-body;
@@ -47,4 +48,13 @@
 /* Slide down toggler class for tablet views */
 .slideDown {
    height: 100%;
+}
+
+/* Fixed nav class for mobile views */
+@media (--mobile) {
+   .fixed-nav .main-navigation {
+      position: fixed;
+      top: 0;
+      box-shadow: 0 3px rgba(0,0,0,0.1);
+   }
 }

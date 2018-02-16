@@ -703,6 +703,12 @@ a:link, a:visited, a:hover, a:visited {
 
 /* Added a flex-grow to the h1 title to make sure it doesn't wrap */
 
+.header__title {
+      margin: 0;
+      padding-top: 21px;
+      padding-bottom: 21px;
+   }
+
 /* Tweaked the font size down slightly on mobile to prevent text wrapping on mobile */
 
 @media (max-width: 640px) {
@@ -783,7 +789,8 @@ a:link, a:visited, a:hover, a:visited {
    line-height: 1.05;
    }
 
-.main-navigation__item:hover, .main-navigation__item:focus {
+.main-navigation__item:hover,
+      .main-navigation__item:focus {
          color: #6aa36e;
       }
 
@@ -812,6 +819,17 @@ a:link, a:visited, a:hover, a:visited {
 
 .slideDown {
    height: 100%;
+}
+
+/* Fixed nav class for mobile views */
+
+@media (max-width: 640px) {
+   .fixed-nav .main-navigation {
+      position: fixed;
+      top: 0;
+      -webkit-box-shadow: 0 3px rgba(0, 0, 0, .1);
+              box-shadow: 0 3px rgba(0, 0, 0, .1);
+   }
 }
 
 #hamburger {
@@ -882,7 +900,7 @@ a:link, a:visited, a:hover, a:visited {
 .hamburger__toggler {
          display: block;
          position: absolute;
-         top: -5px;
+         top: 18px;
          margin-right: 5%
    }
       }

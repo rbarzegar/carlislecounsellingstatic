@@ -2,6 +2,7 @@
    /* Overall top and bottom padding */
    padding-top: 40px;
    padding-bottom: 56px;
+   backface-visibility: hidden;
    @media (--tablet) {
       padding-top: 185px;
       padding-bottom: 216px;
@@ -34,6 +35,9 @@
       }
       @media (--desktop) {
          padding-bottom: 26px;
+         animation-name: moveInLeft;
+         animation-duration: 1s;
+         animation-timing-function: ease-out;
       }
    }
 
@@ -48,6 +52,9 @@
       }
       @media (--desktop) {
          padding-bottom: 40px;
+         animation-name: moveInRight;
+         animation-duration: 1s;
+         animation-timing-function: ease-out;
       }
    }
 
@@ -67,6 +74,10 @@
       transition: all 0.3s ease-out;
       &:hover {
          background-color: $mainGreen;
+      }
+      @media (--desktop) {
+         animation: moveInBottom 0.5s ease-out 0.75s;
+         animation-fill-mode: backwards;
       }
    }
 }

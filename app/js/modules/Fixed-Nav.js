@@ -1,7 +1,8 @@
 class FixedNav {
    fixedNav() {
       const nav = document.querySelector('.main-navigation');
-      const topOfNav = nav.offsetTop;
+      const headerTitle = document.getElementById('headerTitle');
+      const topOfNav = headerTitle.offsetHeight;
 
       function fixtheNav() {
          console.log(window.scrollY, topOfNav);

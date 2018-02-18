@@ -59,4 +59,11 @@
    &__bio {
       color: $gray;
    }
+
+   &--quals {
+      font-size: 12px;
+      @media (--tablet) {
+         font-size: 15px;
+      }
+   }
 }

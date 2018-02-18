@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Carlisle School Counselling</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,11 +12,11 @@
 
 <body class="main">
     <!-- Testfile -->
-    <div class="tester">
+    <!-- <div class="tester">
         <span class="tester__mobile">Mobile</span>
         <span class="tester__tablet">Tablet</span>
         <span class="tester__desktop">Desktop</span>
-    </div>
+    </div> -->
     <!-- /Testfile -->
 
     <!-- HEADER SECTION -->
@@ -31,12 +30,13 @@
 
     <header class="header" id="top">
         <!-- Main navigation -->
-        <h1 class="header__title">
+        <h1 class="header__title" id="headerTitle">
             <span class="header__colored">C</span>arlisle
             <span class="header__colored">S</span>chool
             <span class="header__colored">C</span>ounselling
         </h1>
         <nav class="main-navigation" id="slideDownMenu">
+            <a href="#top" class="main-navigation__item main-navigation--logo">CSC</a>
             <a href="#ourWork" class="main-navigation__item">Our Work</a>
             <a href="#ourTeam" class="main-navigation__item">Our Team</a>
             <a href="#ourRole" class="main-navigation__item">Our Role</a>
@@ -53,7 +53,9 @@
             <p class="large-hero__cta">For more information on how your school can access our counselling support, please contact us:
                 <a href="mailto:info@carlisleschoolcounselling.co.uk">info@carlisleschoolcounselling.co.uk</a>
             </p>
-            <a href="#ourWork"><button class="large-hero__btn">Find out more</button></a>
+            <a href="#ourWork">
+                <button class="large-hero__btn">Find out more</button>
+            </a>
         </div>
     </div>
 
@@ -63,16 +65,18 @@
             <h2 class="benefits__title">Benefits of counselling</h2>
             <p class="benefits__body">
                 Evidence indicates that counselling in schools can underpin academic achievement, improve behaviour and concentration as
-                well as improving the general well-being of the children. The counselling sessions are around 45 minutes
-                long and progress will be reviewed after 6 sessions. We welcome feedback from staff, parents and of course
-                the children we work with at any time. We trust this will be a rewarding experience for staff, children and
-                parents.
+                well as improving the general well-being of the children. </p>
+            <br>
+            <p class="benefits__body">
+                The counselling sessions are around 45 minutes long and progress will be reviewed after 6 sessions. We welcome feedback from
+                staff, parents and of course the children we work with at any time. We trust this will be a rewarding experience
+                for staff, children and parents.
             </p>
         </div>
     </div>
 
     <!-- About us -->
-    <div class="about section-padding"  id="ourWork">
+    <div class="about section-padding" id="ourWork">
         <div class="wrapper">
             <div class="about__flex-container">
                 <div class="about__why about__column">
@@ -117,10 +121,13 @@
     <div class="mid-section section-padding section-padding--large">
         <div class="wrapper">
             <p class="mid-section__body">Two or our team, Jeanette Carson and Anna Lythgoe, are accredited and experienced Supervisors, who have worked
-                with members of staff in the NHS, Charity and Education sectors. They provide a source of support and professional
-                development for those attending Staff Supervision Groups from schools in Cumbria and offer a safe and professional
-                space for staff to explore their challenging roles and to network with other professionals in the area. Colleagues
-                who attend the group sessions are usually Safeguarding Leads or pastoral workers who are deeply immersed
+                with members of staff in the NHS, Charity and Education sectors. </p>
+            <br>
+            <p class="mid-section__body">They provide a source of support and professional development for those attending Staff Supervision Groups from
+                schools in Cumbria and offer a safe and professional space for staff to explore their challenging roles and
+                to network with other professionals in the area.</p>
+            <br>
+            <p class="mid-section__body">Colleagues who attend the group sessions are usually Safeguarding Leads or pastoral workers who are deeply immersed
                 in welfare and emotional well-being issues at their schools</p>
         </div>
     </div>
@@ -142,8 +149,10 @@
                         <img class="our-team__desktop-image" src="./images/david-bues-desktop.PNG" alt="david bues">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">David Bues</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">David Bues <span class="our-team--quals">MBACP (Accred). BA (Hons)</span></div>
+                        <div class="our-team__bio">I have 7 years counselling experience, working in primary and secondary schools in Carlisle, Kendal
+                            and the South Lakes. I have also completed additional professional training, specifically focussed
+                            on Counselling Children &amp; Young People.</div>
                     </div>
                 </div>
                 <div class="our-team__team-member">
@@ -152,8 +161,11 @@
                         <img class="our-team__desktop-image" src="./images/jeanette-carson-desktop.PNG" alt="jeanette carson">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">Jeanette Carson</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">Jeanette Carson <span class="our-team--quals">MBACP (Accred) Dip(HE) Cert Sup</span></div>
+                        <div class="our-team__bio">I've been working as a Counsellor for 20 years and as a Clinical Supervisor for 13 years. I have
+                            been privileged to be part of Carlisle School Counselling from it's inception and Anna and I
+                            facilitate the Group Supervision which meets half-termly.
+                        </div>
                     </div>
                 </div>
                 <div class="our-team__team-member">
@@ -162,8 +174,10 @@
                         <img class="our-team__desktop-image" src="./images/laura-heslop-desktop.PNG" alt="laura heslop">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">Laura Heslop</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">Laura Heslop <span class="our-team--quals">MBACP. BSc (Hons), BA (Hons)</span></div>
+                        <div class="our-team__bio">During my time as a counsellor I have worked primarily within education, where I have over 10 years
+                            experience. I have also practiced in the areas of self-harm, sexual abuse and personality disorders.
+                            I have a BSc Psychology and BA Person Centred Therapy. </div>
                     </div>
                 </div>
                 <div class="our-team__team-member">
@@ -172,8 +186,11 @@
                         <img class="our-team__desktop-image" src="./images/anna-lythgoe.desktop.PNG" alt="anna lythgoe">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">Anna Lythgoe</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">Anna Lythgoe <span class="our-team--quals">MBACP (Accred). BA (Hons). Cert.Sup</span></div>
+                        <div class="our-team__bio">Anna was a teacher for 15 years before becoming a person-centred counsellor. Has set up counselling
+                            services in two secondary schools as well as working for a charity supporting young people (4-20
+                            years) impacted by abuse. Her experience covers both secondary and primary aged young people
+                            where she uses a range of creative and play interventions to engage and support students.</div>
                     </div>
                 </div>
                 <div class="our-team__team-member">
@@ -182,8 +199,12 @@
                         <img class="our-team__desktop-image" src="./images/freddie-allason-desktop.PNG" alt="freddie allason">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">Freddie Allason</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">Freddie Allason <span class="our-team--quals">MBACP BA (Hons)</span></div>
+                        <div class="our-team__bio">During my 7 years as a counsellor, I have worked in primary and secondary schools and also with adults.
+                            I am a Master Practitioner in Eating Disorders & Obesity and for 4 years I have worked for a
+                            charity supporting people impacted by self-harm. I am also a volunteer counsellor with a local
+                            bereavement charity.
+                        </div>
                     </div>
                 </div>
                 <div class="our-team__team-member">
@@ -192,8 +213,10 @@
                         <img class="our-team__desktop-image" src="./images/alison-manson-desktop.PNG" alt="alison manson">
                     </div>
                     <div class="our-team__team-member-about">
-                        <div class="our-team__name">Alison Manson</div>
-                        <div class="our-team__bio">Lorem ipsum dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad. Lorem ipsum  dolor sit amet, et est labore placerat tacimates, sit principles ullamcorpar ad.</div>
+                        <div class="our-team__name">Alison Manson <span class="our-team--quals">MBACP. Dip(HE)</span></div>
+                        <div class="our-team__bio">Experienced primary and secondary schools counsellor with a vast amount of knowledge and experience
+                            of working within palliative care. Also employed in the charity sector as a counsellor for adults
+                            pre and post bereavement.</div>
                     </div>
                 </div>
             </div>
@@ -231,8 +254,11 @@
                 <p class="footer__miro">Website design by
                     <a href="http://www.mirodesign.co.uk">MiRo</a>
                 </p>
-                <p class="footer__copy">&copy; carlisleschoolcounselling.co.uk</p>
-                <p class="footer__backtotop"><a href="#top">Back to the top</a>
+                <p class="footer__backtotop">
+                    <span class="footer__backtotopp">Back to the top</span>
+                    <a href="#top">
+                        <img src="./images/back-to-top.PNG" class="footer__icon" alt="Back to top">
+                    </a>
                 </p>
             </div>
         </div>

@@ -29,7 +29,7 @@
       text-align: center;
       color: $white;
       font-weight: normal;
-      padding-bottom: 8px;
+      padding-bottom: 14px;
       @media (--tablet) {
          padding-bottom: 12px;
       }
@@ -46,7 +46,7 @@
       text-align: center;
       color: $white;
       font-weight: normal;
-      padding-bottom: 14px;
+      padding-bottom: 18px;
       @media (--tablet) {
          padding-bottom: 32px;
       }

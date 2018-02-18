@@ -10,11 +10,25 @@
 
       @media (--tablet) {
          flex-direction: row;
-         justify-content: space-around;
+         justify-content: space-between;
       }
    }
 
-   &__miro, &__copy, &__backtotop {
+   &__miro, &__backtotop, &__backtotopp {
       font-size: 0.75rem;
+      @media (--mobile) {
+         padding-bottom: 1rem;
+      }
+   }
+
+   &__icon {
+      width: 30px;
+      height: auto;
+      padding-left: 5px;
+   }
+
+   &__backtotop {
+      display: flex;
+      align-items: center;
    }
 }

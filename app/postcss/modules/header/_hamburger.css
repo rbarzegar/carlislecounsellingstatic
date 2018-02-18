@@ -1,7 +1,7 @@
 #hamburger {
    position: relative;
-   width: 50px;
-   height: 30px;
+   width: 40px;
+   height: 20px;
    position: relative;
    transform: rotate(0deg);
    transition: .5s ease-in-out;
@@ -10,7 +10,7 @@
    & span {
       display: block;
       position: absolute;
-      height: 6px;
+      height: 3px;
       width: 100%;
       background: $black;
       border-radius: 9px;
@@ -23,10 +23,10 @@
       top: 0px;
    }
    & span:nth-child(2) {
-      top: 16px;
+      top: 12px;
    }
    & span:nth-child(3) {
-      top: 32px;
+      top: 24px;
    }
    &.open span:nth-child(1) {
       top: 18px;
@@ -51,7 +51,7 @@
       @media (--tablet-only) {
          display: block;
          position: absolute;
-         top: 18px;
+         top: 22px;
          margin-right: 5%;
       }
    }
